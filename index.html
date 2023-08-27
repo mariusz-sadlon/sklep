@@ -3,6 +3,17 @@
 <head>
     <title>Moja Podstawowa Strona</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        function zmienZdjecie() {
+            var obrazek = document.getElementById("obrazek");
+            if (obrazek.src.endsWith("obrazek1.jpg")) {
+                obrazek.src = "data photo/_4PK8470_m.jpg";
+            } else {
+                obrazek.src = "data photo/_4PK8562_m.jpg";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -21,7 +32,8 @@
 
 <main>
     <h2>index</h2>
-    
+    <img src="data photo/_4PK8470_m.jpg" alt="Kraków widok"/> 
+    <img id="obrazek" src="data photo/_4PK8470_m.jpg" alt="Kraków widok" onclick="zmienZdjecie()">
 </main>
 
 <footer>
